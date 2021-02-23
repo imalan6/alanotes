@@ -1,6 +1,6 @@
 #### ArrayList
 
-![ArrayList-1-768x406-1](C:\Users\admin\Desktop\学习\集合\ArrayList-1-768x406-1.png)
+![ArrayList-1-768x406-1.png](https://i.loli.net/2021/02/23/58BcsDv2uzxdkOp.png)
 
 ArrayList底层使用的是Object数组存储元素。
 
@@ -119,7 +119,7 @@ ArrayList底层使用的是Object数组，所以ArrayList具有数组查询速�
 
 #### LinkedList
 
-![302258007343926[0]](C:\Users\admin\Desktop\学习\集合\302258007343926[0].jpg)
+![302258007343926_0_.jpg](https://i.loli.net/2021/02/23/uWQR7ibej83yvUh.jpg)
 
 在LinkedList的底层是一种双向循环链表。在此链表上每一个数据节点都由三部分组成：前指针（指向前面的节点的位置），数据，后指针（指向后面的节点的位置）。最后一个节点的后指针指向第一个节点的前指针，形成一个循环。
 
@@ -127,13 +127,13 @@ ArrayList底层使用的是Object数组，所以ArrayList具有数组查询速�
 
 LinkedList底层的数据结构是基于双向循环链表的，且头结点中不存放数据,如下：
 
-![050153010163922](C:\Users\admin\Desktop\学习\集合\050153010163922.jpg)
+![050153010163922.jpg](https://i.loli.net/2021/02/23/2z7ntA6BDouYhlX.jpg)
 
  
 
 既然是双向链表，那么必定存在一种数据结构——我们可以称之为节点，节点实例保存业务数据，前一个节点的位置信息和后一个节点位置信息，如下图所示：
 
-![050101321255262](C:\Users\admin\Desktop\学习\集合\050101321255262.png)
+![050101321255262.png](https://i.loli.net/2021/02/23/1louWZRYiAxHF8t.png)
 
 私有属性
 
