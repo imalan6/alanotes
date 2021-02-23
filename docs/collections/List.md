@@ -225,19 +225,19 @@ private E remove(Entry<E> e) {
         throw new NoSuchElementException();
     // 保留将被移除的节点e的内容
     E result = e.element;
-   // 将前一节点的next引用赋值为e的下一节点
+    // 将前一节点的next引用赋值为e的下一节点
     e.previous.next = e.next;
-   // 将e的下一节点的previous赋值为e的上一节点
+    // 将e的下一节点的previous赋值为e的上一节点
     e.next.previous = e.previous;
-   // 上面两条语句的执行已经导致了无法在链表中访问到e节点，而下面解除了e节点对前后节点的引用
-   e.next = e.previous = null;
-  // 将被移除的节点的内容设为null
-  e.element = null;
-  // 修改size大小
-  size--;
-  modCount++;
-  // 返回移除节点e的内容
-  return result;
+    // 上面两条语句的执行已经导致了无法在链表中访问到e节点，而下面解除了e节点对前后节点的引用
+    e.next = e.previous = null;
+    // 将被移除的节点的内容设为null
+    e.element = null;
+    // 修改size大小
+    size--;
+    modCount++;
+    // 返回移除节点e的内容
+    return result;
 }
 ```
 
