@@ -1,16 +1,18 @@
-- 集合
+- JAVA核心
 
-  - [ArrayList/Vector](collections/ArrayList.md)
-  - [LinkedList](collections/LinkedList.md)
-  - [HashMap](collections/HashMap.md)
-  - [HashSet](collections/HashSet.md)
-  - [LinkedHashMap](collections/LinkedHashMap.md)
+  - 集合
 
-- Java 多线程
+    - [ArrayList/Vector](collections/ArrayList.md)
+    - [LinkedList](collections/LinkedList.md)
+    - [HashMap](collections/HashMap.md)
+    - [HashSet](collections/HashSet.md)
+    - [LinkedHashMap](collections/LinkedHashMap.md)
 
-  - [多线程中的常见问题](thread/Thread-common-problem.md)
-  - [synchronized 关键字原理](thread/Synchronize.md)
-  - [多线程的三大核心](thread/Threadcore.md)
+  - Java 多线程
+
+    - [多线程中的常见问题](thread/Thread-common-problem.md)
+    - [synchronized 关键字原理](thread/Synchronize.md)
+    - [多线程的三大核心](thread/Threadcore.md)
   - [对锁的一些认知](thread/Java-lock.md)
   - [ReentrantLock 实现原理 ](thread/ReentrantLock.md)
   - [ConcurrentHashMap 的实现原理](thread/ConcurrentHashMap.md)
