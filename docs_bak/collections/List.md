@@ -191,7 +191,7 @@ public boolean addAll(int index, Collection<? extends E> c) {
         throw new IndexOutOfBoundsException("Index: "+index+
                                                 ", Size: "+size);
     Object[] a = c.toArray();
-   int numNew = a.length;
+    int numNew = a.length;
    // 若需要插入的节点个数为0则返回false，表示没有插入元素
     if (numNew==0)
         return false;
