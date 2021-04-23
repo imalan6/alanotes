@@ -20,7 +20,7 @@
 
     - [Java多线程使用](concurrency/Java多线程使用.md)
 
-    - [多线程的三大核心](thread/Threadcore.md)
+    - [多线程的三大核心](springcloud/SpringCloud系列之Ribbon.md)
 
     - [线程池的使用](concurrency/线程池的使用.md)
 
@@ -87,7 +87,7 @@
 
     - [SpringCloud系列之Eureka](springcloud/SpringCloud系列之Eureka.md)
 
-    - [SpringCloud系列之Zuul](springcloud/SpringCloud系列之zuul.md)
+    - [SpringCloud系列之Zuul](springcloud/SpringCloud系列之Zuul.md)
 
     - [SpringCloud系列之Feign](springcloud/SpringCloud系列之Feign.md)
 
