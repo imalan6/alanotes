@@ -65,6 +65,27 @@ Java 虚拟机规定，线程对主内存共享变量的操作必须在线程的
 
 比如用一个变量作为状态标识来控制多个线程协同工作。每个线程通过判断状态标识的值来确定是否执行相关代码。那这个状态标识的变量就可以使用`volatile`关键字修饰，以确保当某个线程更新了变量的值之后，其他的线程可以立即获得最新的值。 
 
+- **双重检查锁定**
+
+在单例模式中，对单例对象需要使用volatile关键字进行修饰。这是因为，线程缺乏同步，可能会遇到某个对象引用的更新值（由另一个线程写入）和该对象状态的旧值同时存在。
+
+```java
+private volatile static Singleton instace;     
+    
+public static Singleton getInstance(){     
+    //第一次null检查       
+    if(instance == null){              
+        synchronized(Singleton.class) {        
+            //第二次null检查         
+            if(instance == null){          
+                instance = new Singleton();
+            }    
+        }             
+    }    
+    return instance;   
+}
+```
+
 - **一个线程写，多个线程读** 
 
 `volatile`很适用一个线程写，多个线程读的场合。比如，类似发布订阅的机制，当一个写线程更新`volatile`变量值的话，其他读线程可以立即获取到最新值。
